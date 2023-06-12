@@ -12,6 +12,8 @@ There are some advantages and disadvantages of using this approach-
 | Lesser server & client side code      |       Slow                        |
 | Fairly secure                         | Need to maintain a large Database |
 
+There are probably more points to this but I'm lazy to list them all.
+
 ### Setting up MongoDB
 You can register / login to your account for MongoDB here: https://account.mongodb.com/account/login
 After setting up your account make a new Project and follow the steps below-
