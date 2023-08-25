@@ -1,5 +1,4 @@
 # Discord-2.0
-Remaking Discord in Python using the tkinter library.  
 
 This is just a test project to learn about MongoDB's API and decided to implement it in a chat app similar to discord which also uses a database to store messages.
 Because of that I don't need to code much of server (database) side code and very little client side code.
