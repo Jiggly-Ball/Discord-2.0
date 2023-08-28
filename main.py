@@ -11,7 +11,7 @@ class App:
     def __init__(self) -> None:
         self.name = "Discord 2.0 (real)"
         self.login_res = "400x500"
-        self.chat_res = "1100x700"
+        self.chat_res = "1200x850"
         self.user = None
         self.chat_data = []
         self.current_server = "server001"
