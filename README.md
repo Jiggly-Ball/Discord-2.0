@@ -18,11 +18,11 @@ There are probably more points to this but I'm lazy to list them all.
 This project only requires **pymongo (4.3.2)** to be installed.
 You can either execute-
 ```
-py pip install pymongo==4.3.2
+pip install pymongo==4.3.2
 ```
 Or-
 ```
-py pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 In your terminal.
 
