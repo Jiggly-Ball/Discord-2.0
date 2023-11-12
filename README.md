@@ -7,7 +7,7 @@ This is a very bad replica of discord as there are still some bugs which need to
 
 There are some advantages and disadvantages of using this approach-
 | Advantages                            | Disadvantages                     |
-| -----------                           |   -----------                     |
+| -----------                           | -----------                       |
 | Lesser server & client side code      |       Slow                        |
 | Fairly secure                         | Need to maintain a large Database |
 
@@ -15,20 +15,13 @@ There are probably more points to this but I'm lazy to list them all.
 
 
 ### Installation
-This project only requires **pymongo (4.3.2)** to be installed.
-You can either execute-
-```
-pip install pymongo==4.3.2
-```
-Or-
+Execute this code in your terminal-
 ```
 pip install -r requirements.txt
 ```
-In your terminal.
 
 
 ### Setting up MongoDB
-You can register / login to your account for MongoDB here: https://account.mongodb.com/account/login
-After setting up your account and creating a database in your cluster, paste your token in `seceret.py` under the `token` key value.
+You can register / login to your account for MongoDB [here](https://account.mongodb.com/account/login). After setting up your account and creating a database in your cluster, paste your token in the `.env.token` file.
 
 Finally, execute `main.py`.
