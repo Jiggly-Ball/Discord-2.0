@@ -1,12 +1,10 @@
-import os
 from pymongo import MongoClient
-from dotenv import load_dotenv
+from dotenv import dotenv_values
 
-load_dotenv()
-token = os.getenv("TOKEN")
+token = dotenv_values(".env.token")["TOKEN"]
 
-if token is "":
-    print("Please enter your database token into the \".env\" file.")
+if token == "":
+    print("Please enter your database token into the \".env.token\" file.")
     exit()
 
 try:
