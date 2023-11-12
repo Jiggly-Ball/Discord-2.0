@@ -24,4 +24,8 @@ pip install -r requirements.txt
 ### Setting up MongoDB
 You can register / login to your account for MongoDB [here](https://account.mongodb.com/account/login). After setting up your account and creating a database in your cluster, paste your token in the `.env.token` file.
 
+
 Finally, execute `main.py`.
+
+![Discord 2 0 - Made with Clipchamp](https://github.com/Krishpy-Chips/Discord-2.0/assets/101330162/e650a232-6985-4994-8a73-819eb706c524)
+
