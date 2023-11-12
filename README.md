@@ -29,3 +29,4 @@ Finally, execute `main.py`.
 
 ![Discord 2 0 - Made with Clipchamp](https://github.com/Krishpy-Chips/Discord-2.0/assets/101330162/e650a232-6985-4994-8a73-819eb706c524)
 
+![Discord 2 0 - Made with Clipchamp (1)](https://github.com/Krishpy-Chips/Discord-2.0/assets/101330162/40d0f4e6-9ee3-49f2-9c15-44f713d2c4dc)
