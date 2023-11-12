@@ -31,6 +31,4 @@ In your terminal.
 You can register / login to your account for MongoDB here: https://account.mongodb.com/account/login
 After setting up your account and creating a database in your cluster, paste your token in `seceret.py` under the `token` key value.
 
-Finally run **main.py**
-
-Incase the **server.py** can't connect to the database, uncomment the lines 4, 5 & 6 in **server.py**
+Finally, execute `main.py`.
