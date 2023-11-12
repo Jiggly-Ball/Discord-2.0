@@ -1,3 +1,0 @@
-secret_data = {
-    "token":""
-}
