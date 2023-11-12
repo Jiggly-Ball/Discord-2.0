@@ -5,7 +5,7 @@ from threading import Thread
 from random import randint
 from time import sleep
 
-from server import CHAT
+from server import Chat
 
 class App:
     def __init__(self) -> None:
@@ -96,7 +96,7 @@ class App:
         def refresh_chat():
             try:
                 while self.refresh_running:
-                    chat_server = CHAT.find_chat(self.current_server)
+                    chat_server = Chat.find_chat(self.current_server)
                     chat_history = chat_server["chats"]
 
                     if self.start is True:
@@ -125,7 +125,7 @@ class App:
                 send_message = f"{self.user} : " + chat_entry.get()
                 text_box.insert(tk.END, "\n" + send_message)
                 self.chat_data.append(send_message)
-                CHAT.update_chat(self.current_server, send_message)
+                Chat.update_chat(self.current_server, send_message)
             chat_entry.delete(0, tk.END)
 
         text_box = tk.Text(chat_window, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT,width=100,height=30)

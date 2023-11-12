@@ -1,11 +1,28 @@
+import os
 from pymongo import MongoClient
-from secret import secret_data
+from dotenv import load_dotenv
 
-#import dns
-#dns.resolver.default_resolver=dns.resolver.Resolver(configure=False)
-#dns.resolver.default_resolver.nameservers=['8.8.8.8']
+load_dotenv()
+token = os.getenv("TOKEN")
 
-client = MongoClient(secret_data["token"])
+if token is "":
+    print("Please enter your database token into the \".env\" file.")
+    exit()
+
+try:
+    client = MongoClient(token)
+    
+except Exception:
+    print(f"Error-\n\n{Exception}\n\n")
+
+    print("Attempting to reconnect...")
+
+    import dns
+    dns.resolver.default_resolver=dns.resolver.Resolver(configure=False)
+    dns.resolver.default_resolver.nameservers=['8.8.8.8']
+
+    client = MongoClient(token)
+
 dbtyp = client["chatdata"]
 
 collections = dbtyp.list_collection_names()

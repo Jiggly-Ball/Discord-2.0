@@ -1,1 +1,2 @@
 pymogno==4.3.2
+python-dotenv==0.19.2
