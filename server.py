@@ -34,14 +34,14 @@ chat_db = dbtyp["chat"]
 
 print("Connected to Database")
 
-class CHAT:
+class Chat:
     def find_all_chats():
         obj = chat_db.find({})
         chats = [chat for chat in obj]
         return chats
 
     def update_chat(chat_:str, message:str):
-        chat_log = CHAT.find_chat(chat_)
+        chat_log = Chat.find_chat(chat_)
         chat_log["chats"].append(message)
         chat_db.update_one({"chatid":chat_},{"$set":{"chats":chat_log["chats"]}})
 
